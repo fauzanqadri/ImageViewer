@@ -18,7 +18,7 @@ public class ImageCanvas extends Canvas{
         MediaTracker media = new MediaTracker(this);
         img = Toolkit.getDefaultToolkit().getImage(Path);
         media.addImage(img, 0);
-        super.setSize(800, 600);
+        super.setSize(1024, 768);
         try{
             media.waitForID(0);
         }catch(Exception e){
